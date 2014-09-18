@@ -5,4 +5,8 @@ unless $LOAD_PATH.include? "."
 end
 
 require 'app'
+ 
+use Rack::ShowExceptions
+ 
+run App.new
 
